@@ -8,9 +8,10 @@ jobs:
     name: A job to say hello
     steps:
 
+    -uses: ./
     - name: Hello world action step
       id: hello
-      uses: ./
+      uses: planethouki/hello-world-docker-action@master
       with:
         who-to-greet: 'Mona the Octocat'
     # Use the output from the `hello` step
